@@ -1,7 +1,8 @@
 :root{
     --bg:hsl(0, 0%, 100%);
-    --overpass: 'overpass' sans-serif;
-    --ubuntu: 'ubuntu' sans-serif;
+    --overpass: 'overpass', sans-serif;
+    --ubuntu: 'ubuntu', sans-serif;
+    --btn-hover: hsl(355, 100%, 74%);
 }
 *{
     margin: 0;
@@ -14,15 +15,18 @@ body {
     background-color: var(--bg);
     height: 100vh;
     overflow-x: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 .main{
     margin: 0 auto;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    width: 100%;
+    
 }
 h1{
-    font-family: var(--overpass);
+    font-family: var(--ubuntu);
+    font-size: 3rem;
     font-weight: 400;
     margin: 20px auto;
     padding: 2rem 0 0 0;
@@ -33,31 +37,103 @@ h1{
     background: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     background-size: cover;
     padding: 2rem 5rem;
+    min-height: 400px;
+    width: 100%;
+    border-bottom-left-radius: 5rem;
 }
 .nav{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+.blogr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.navbtn{
+    font-size: 17px;
+    font-family: var(--overpass);
+    cursor: pointer;
+}
+.brand{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 30px 0 0;
+    font-family: var(--overpass);
+    color: var(--bg);
 }
 .nav ul li{
     list-style: none;
+    margin: 0 20px;
 }
 .nav-items{
     display: flex;
 }
-.brand{
-    font-size: 2rem;
+.header p{
+    font-family: var(--overpass);
+    font-size: 17px;
+    font-weight: lighter;
+    margin: 10px auto;
+}
+.st-btn{
+    font-family: var(--overpass);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+}
+.start-btn{
+    padding: 10px;
+    align-self: center;
+}
+.start-btn:hover{
+    background-color: var(--btn-hover);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.learn-btn{
+    padding: 10px;
+    align-self: center;
+}
+.learn-btn:hover{
+    background-color: var(--bg);
+    color: hsl(356, 100%, 66%);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
 }
 .laptop-content{
+    margin: 20px auto;
+    padding: 20px 50px;
+    width: 100%;
+}
+
+.laptop-content h2{
     margin: 0 auto;
-    padding: 20px;
+    padding: 2.5rem 0 0 0;
+}
+.laptop-content p{
+    width: 100%;
 }
 .flex{
     display: flex;
 }
 .flex img{
-    width: 500px;
+    width: 40%;
+    height: 50%;
+    margin: ;
 }
 .grid{
     display: grid;
@@ -68,7 +144,7 @@ h1{
     align-items: center;
     justify-content: center;
     margin: 20px 50px;
-    width: 100%;
+    width: 50%;
 }
 .mobile-content{
     background: linear-gradient( 50deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%) );
