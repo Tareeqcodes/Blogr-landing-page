@@ -1,9 +1,6 @@
-:root{
-    --bg:hsl(0, 0%, 100%);
-    --overpass: 'overpass', sans-serif;
-    --ubuntu: 'ubuntu', sans-serif;
-    --btn-hover: hsl(355, 100%, 74%);
-}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -11,175 +8,160 @@
 }
 
 body {
+    font-family: sans-serif;
     font-size: 16px;
-    background-color: var(--bg);
-    height: 100vh;
+    background-color: hsl(0, 0%, 100%);
     overflow-x: hidden;
     text-align: center;
     justify-content: center;
-    align-items: center;
+    height: 100vh;
+
 }
 .main{
-    margin: 0 auto;
-    width: 100%;
-    
-}
-h1{
-    font-family: var(--ubuntu);
-    font-size: 3rem;
-    font-weight: 400;
-    margin: 20px auto;
-    padding: 2rem 0 0 0;
-}
-.header{
-    color: var(--bg);
-    background-image: url(images/bg-pattern-intro-desktop.svg);
-    background: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-    background-size: cover;
-    padding: 2rem 5rem;
-    min-height: 400px;
-    width: 100%;
-    border-bottom-left-radius: 5rem;
-}
-.nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 50px;
-}
-.blogr{
-    display: flex;
     align-items: center;
     justify-content: center;
-}
-.btn{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-.navbtn{
-    font-size: 17px;
-    font-family: var(--overpass);
-    cursor: pointer;
-}
-.brand{
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 0 30px 0 0;
-    font-family: var(--overpass);
-    color: var(--bg);
-}
-.nav ul li{
-    list-style: none;
-    margin: 0 20px;
-}
-.nav-items{
-    display: flex;
-}
-.header p{
-    font-family: var(--overpass);
-    font-size: 17px;
-    font-weight: lighter;
-    margin: 10px auto;
-}
-.st-btn{
-    font-family: var(--overpass);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin: 20px auto;
-}
-.start-btn{
-    padding: 10px;
-    align-self: center;
-}
-.start-btn:hover{
-    background-color: var(--btn-hover);
-    border-radius: 20px;
-    cursor: pointer;
-}
-.learn-btn{
-    padding: 10px;
-    align-self: center;
-}
-.learn-btn:hover{
-    background-color: var(--bg);
-    color: hsl(356, 100%, 66%);
-    border-radius: 20px;
-    cursor: pointer;
+    text-align: center; 
+    width: 100%;
 }
 
-.hidden{
+.header {
+     background-image: url(images/bg-pattern-intro-desktop.svg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, hsl(356, 100%, 66%), hsl(355, 100%, 74%));
+    width: 100%;
+    padding: 5rem 5rem 10rem 5rem;
+    border-bottom-left-radius: 50px;  
+}
+
+.first-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.first-flex img {
+    width: 30px;
+     height: 30px;
+}
+.item {
+    display: flex;
+    margin: 0 auto;
+}
+.hidden {
     display: none;
 }
-.laptop-content{
-    margin: 20px auto;
-    padding: 20px 50px;
-    width: 100%;
-}
 
-.laptop-content h2{
-    margin: 0 auto;
-    padding: 2.5rem 0 0 0;
+h1{
+    padding: 6rem 0 0 0;
+    color: hsl(0, 0%, 100%);
+    font-family: overpass;
+    font-size: 3rem;
+    font-weight: 600;
 }
-.laptop-content p{
-    width: 100%;
+.header p {
+    color: hsl(240, 2%, 79%);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
-.flex{
-    display: flex;
-}
-.flex img{
-    width: 40%;
-    height: 50%;
-}
-.grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2 ifr);
-    margin: 30px;
-    text-align: center;
+ .btn-1 {
+   background-color: hsl(0, 0%, 100%);
+   color: hsl(353, 100%, 62%);
+    font-family: overpass;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px;
+    border: none;
     align-items: center;
-    justify-content: center;
-    margin: 20px 50px;
-    width: 50%;
+    border-radius: 50px;
+    cursor: pointer;
 }
-.mobile-content{
-    background: linear-gradient( 50deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%) );
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin: 5rem auto;
-    padding: 10rem;
-    height: 15rem;
-}
-.mobile-content img{
-    width: 500px;
-}
+ .btn-1:hover {
+    background-color: hsl(355, 100%, 74%);
+    color: hsl(0, 0%, 100%);
+  }
+.btn-2 {
+    background-color: hsl(355, 100%, 74%);
+    color: hsl(0, 0%, 100%);
+     font-family: overpass;
+     font-size: 14px;
+     font-weight: 600;
+     align-items: center;
+     padding: 10px;
+     border: 1px;
+     border-radius: 50px;
+     cursor: pointer;
+ }
+ .btn-2:hover {
+     background-color: hsl(0, 0%, 100%);
+     color: hsl(353, 100%, 62%);
+ }
 
-.last-content{
+ .section-1{
     display: flex;
-    text-align: center;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-}
-.last-content img{
-    width: 500px;
-}
-.footer{
-    background-color: hsl(237, 23%, 32%);
-    padding: 5rem;
+    padding: 3rem 0 5rem 5rem;
+ }
+ .section-1 h2{
+    font-family: ubuntu;
+    color: hsl(237, 17%, 21%);
+    font-size: 2.5rem;
+    padding-top: 2rem;
+ }
+
+ .future{
+    display: flex;
+    align-items:center;
     justify-content: space-between;
+    gap: 3rem;
+    justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    text-align: center;
+ }
+ .future img{
+    width: 40rem;
+    height: 40rem; 
+    object-fit: cover;
+ }
+ .future-div{
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin-top: 6rem;
+ }
+ 
+ .future-div h3{
+   font-family: overpass;
+   font-size: 1.5rem;
+   margin: 2rem 0 1rem 0;
+ }
+ .future-div p{
+      text-align: justify;
+      color: hsl(207, 13%, 34%);
+      width: 85%;
+      word-spacing: 1px;
+      line-height: 30px;
+ }
+.Robust-div{
+    margin-top: 3rem;
 }
-.footer-links{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
+.section-2{
+    background-color: hsl(237, 23%, 32%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem 0 5rem;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    gap: 2rem;
+    width: 100%;
 }
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+.section-2 img{
+    width: 40rem;
+    height: 40rem;
+    object-fit: cover;
+}
