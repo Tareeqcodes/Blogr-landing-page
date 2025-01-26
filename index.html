@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,300;0,700;1,300;1,400;1,300;1,700&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
@@ -19,42 +19,63 @@
 <body>
   <main class="main">
   <header class="header">
-    
   <div class="first-flex">
-    <picture>
+    <span class="icons">
       <img src="./images/logo.svg" alt="Blogr logo" class="logo">
-    </picture>
-  <div class="item">
-    <h4>Product</h4>
-  <ul class="hidden">
-  
-   <li>Overview</li>
-   <li>Pricing</li>
-   <li> Marketplace</li>
-   <li> Features</li> 
-   <li> Integrations</li>
-    
-  </ul>
-  
-    <h4>Company</h4>
-    <ul class="hidden">
-  <li>About</li>
-  <li>Team</li>
-  <li>Blog</li>
-  <li>Careers</li>
-  </ul>
-  
-    <h4>Connect</h4>
-  <ul class="hidden">
-    <li>Contact</li>
-    <li>Newsletter</li>
-    <li>LinkedIn</li>
-  </ul>
-  </div>
-  <div class="first-btn">
-    <button>Login</button>
-   <button>Sign Up</button>
-  </div>
+      <img class="icon-ham" src="images/icon-hamburger.svg" alt="icon-hamburger">
+    <img class="hidden icon-close" src="images/icon-close.svg" alt="icon-close">
+  </span>
+  <nav class="nav-item hidden">
+    <ul class="list">
+      <li class="menu-item">
+        Product
+        <span class="arrow">
+              <picture>
+            <img src="images/icon-arrow-light.svg" alt="arrow">
+          </picture>
+        </span>
+      <ul class="hidden dropdown">
+       <li>Overview</li>
+       <li>Pricing</li>
+       <li> Marketplace</li>
+       <li> Features</li> 
+       <li> Integrations</li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      Company
+      <span class="arrow">
+        <picture>
+          <img src="images/icon-arrow-light.svg" alt="arrow">
+        </picture>
+      </span>
+      <ul class="hidden dropdown">
+    <li>About</li>
+    <li>Team</li>
+    <li>Blog</li>
+    <li>Careers</li>
+    </ul>
+  </li>
+    <li class="menu-item">
+      Connect
+      <span class="arrow">
+        <picture>
+          <img src="images/icon-arrow-light.svg" alt="arrow">
+        </picture>
+      </span>
+    <ul class="hidden dropdown">
+      <li>Contact</li>
+      <li>Newsletter</li>
+      <li>LinkedIn</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="first-btn ">
+  <button class="login-btn">Login</button>
+ <button class="signUp-btn">Sign Up</button>
+</div>
+  </nav>
   </div>
   <div class="note">
     <h1>A modern publishing platform</h1>
@@ -68,6 +89,9 @@
   <section class="section-1">
     <h2>Designed for the future</h2>
     <div class="future">
+      <picture class="img-1">
+        <img src="images/illustration-editor-mobile.svg" alt="">
+      </picture>
     <div class="future-div">
     <h3>Introducing an extensible editor</h3>
     <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
@@ -80,7 +104,7 @@
       by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
   </div>
     </div>
-    <picture>
+    <picture class="img-2">
       <img src="images/illustration-editor-desktop.svg" alt="">
     </picture>
     </div>
@@ -89,53 +113,69 @@
   <picture>
     <img src="images/illustration-phones.svg" alt="illustration-phones">
   </picture>
-  <div>
-  <h5>State of the Art Infrastructure</h5>
+  <div class="infra">
+  <h2>State of the Art Infrastructure</h2>
   <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
   This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
   </div>
- 
 </section>
-<section>
 
-  <h5>Free, open, simple</h5>
+<section class="section-3">
+      <img class="desktop-img" src="images/illustration-laptop-desktop.svg" alt="illustration-laptop-desktop">
+      <img class="mobile-img" src="images/illustration-laptop-mobile.svg" alt="illustration-laptop-desktop">
+  <div>
+  <h3>Free, open, simple</h3>
   <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
   features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
   and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
 
-  <h5>Powerful tooling</h5>
+  <h3>Powerful tooling</h3>
   <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
   capable of producing even the most complicated sites.</p>
-
+</div>
 </section>
-<footer>
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-column">
+      <img src="images/logo.svg" alt="logo">
+    </div>
 
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn
-</footer>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="footer-column">
+    <h3>Product</h3>
+   <ul>
+     <li>Overview</li>
+     <li>Pricing</li>
+     <li>Marketplace</li>
+     <li>Features</li>
+     <li>Integrations</li>
+   </ul>
   </div>
+<div class="footer-column">
+  <h3>Company</h3>
+  <ul>
+   <li>About</li>
+   <li>Team</li>
+   <li>Blog</li>
+   <li>Careers</li>
+  </ul>
+</div>
+   <div class="footer-column">
+     <h3>Connect</h3>
+    <ul>
+     <li>Contact</li>
+     <li>Newsletter</li>
+     <li>LinkedIn</li>
+    </ul>
+   </div>
+  
+  </div>
+     <div class="attribution">
+       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+       Coded by <a href="#">Your Name Here</a>.
+     </div>
+</footer>
 </main>
+
+<script src="script.js"></script>
 </body>
 </html>
